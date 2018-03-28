@@ -6,21 +6,25 @@
 
 Adds form, image_tag, and download/save helpers to help you get up and running with [filepicker.io](http://filepicker.io) in Rails.
 
+# Attention
+
+For new Rails project, please use the new version of `filepicker-rails` (the name was changed to `filestack-rails`) at here https://github.com/filestack/filestack-rails
+
+This repo is the fix only for `filepicker-rails 2.1.0` to work on Rails 5. The change is only like this https://github.com/emars/filepicker-rails/commit/bdd44b14a824659193c1a1ccaf37672faac0da67
+
+So why do we need to change on this version, why not use `2.2.0`. The reason is on `2.2.0` they release 2 things important is `fix the Rails 5 issues` and `change the from filepicker-rails to filestack-rails` :boom: (Check at here https://github.com/filestack/filestack-rails/commit/4e9703893cbfa2c0985f58691ee5accd47df0ebf#diff-4ac32a78649ca5bdd8e0ba38b7006a1eR5)
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'filepicker-rails'
+gem 'filepicker-rails', git: 'https://github.com/nimbl3/filepicker-rails', tag: 'v2.1.0-rails-5'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install filepicker-rails
 
 Add the filepicker.io javascript library to your layout:
 
@@ -190,4 +194,3 @@ Thank you to all the [contributors](https://github.com/Ink/filepicker-rails/grap
 [code_climate_badge]: https://codeclimate.com/github/Ink/filepicker-rails.png
 [coveralls]: https://coveralls.io/r/Ink/filepicker-rails
 [coveralls_badge]: https://coveralls.io/repos/Ink/filepicker-rails/badge.png?branch=master
-
